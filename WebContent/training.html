@@ -1,0 +1,44 @@
+<head>
+  <link rel="stylesheet" href="css/list.css" />
+</head>
+
+<h1>トレーニング</h1>
+
+<nav>
+  <div>
+    <ul>
+      <li><button>上</button></li>
+      <li><button>自由移動</button></li>
+      <li><button>下</button></li>
+    </ul>
+  </div>
+</nav>
+
+<ol id="viewlist">
+  <p id="listItem"></p>
+</ol>
+
+<script>
+  function listAppend(count) {
+    // li 要素の作成と属性の指定
+    var newAnchor = document.createElement("li");
+    // li 要素内部
+    var newContent = document.createTextNode("これが表示される" + count);
+
+    var newbutton = document.createElement("button");
+    newbutton.innerText = count;
+
+    newAnchor.appendChild(newContent);
+    newAnchor.appendChild(newbutton);
+
+    // リストに追加
+    var list = document.getElementById("viewlist");
+    list.appendChild(newAnchor);
+  }
+</script>
+
+<script>
+  for (let index = 0; index < 5; index++) {
+    listAppend(index);
+  }
+</script>

@@ -1,0 +1,134 @@
+:root {
+  --neBgColor: #7d7d7d;
+  --neShadow: #515151;
+  --neShadowBlur: #a9a9a9;
+  --neBaseBgColorse: #5a5e64;
+}
+
+
+
+.card {
+    text-align: center;
+    /* min-width: 20rem; */
+    box-sizing: border-box;
+    border-radius: 50px;
+    background-color:  var(--neBgColor);
+    box-shadow: 20px 20px 60px var(--neShadow),
+      -20px -20px 60px var(--neShadowBlur);
+      margin: 2rem;
+      margin-top: 2rem;
+      /* max-width: 95%; */
+      min-width: 25rem;
+      /* min-height: 600px; */
+      display: block;
+      float: left;
+      /* align-content: flex-start;
+      align-items: flex-start; */
+      width: 90%;
+  }
+
+
+  .card-columns input {
+    max-width: 90%;
+  }
+
+  #card-columns {
+    margin-bottom: 10rem;
+  }
+
+
+#space {
+    height: 20rem;
+    display: block;
+  }
+
+  .editCord {
+    display: none;
+    width: 90%;
+    padding-left: 3rem;
+    padding-top: 5px;
+  }
+  .clearfix {
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    min-width: 300px;
+    padding-bottom: 400px;
+  }
+
+
+
+ .base-card>.card-body {
+    text-align: center;
+    font-size: larger;
+    background-color:var(--neBgColor);
+  }
+
+  .base-cord-titele {
+    font-size: 10rem;
+  }
+  .base-cord-text {
+    font-size: large;
+  }
+
+  .numberSetCard{
+border-radius: 20px;
+border-radius: 50px;
+  }
+
+  .cardWorld {
+     margin-top:150px ;
+     /* margin-bottom: 121px; */
+  }
+
+  .clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+
+  .space {
+    height: 150px;
+    width: 300px;
+    border-style:dashed;
+    border-color: blue;
+    background-color: red;
+
+  }
+
+
+  .editButton {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 1rem;
+    /* background-color: red; */
+    position:absolute;
+    right: 10px;
+  }
+  .subtext{
+    width: 100%;
+    position:relative;
+  }
+  .regText{
+    width: 100%;
+    border-radius: 0.25rem;
+
+  }
+
+
+  .CtitleText{
+    color: white;
+    padding-left: 1rem;
+  }
+
+  .card-img-top{
+    border-radius: 50px;
+  }
+
+
+  #useDominicImage{
+    max-height: 400px;
+    margin: auto;
+    width: auto;
+  }

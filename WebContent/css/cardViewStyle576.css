@@ -1,0 +1,38 @@
+/* .menuButton{
+    color: red;
+    }  */
+    
+.cardWorld {
+    margin-top: 1rem;
+    padding-bottom: 0px;
+}
+
+ .card{
+         min-width: 100px;
+         min-height: 100px;
+         margin:4% 2% 4% 2%;
+         width:96%;
+         height: 30%;
+         max-width: 100%;
+}
+
+.base-card-text{
+    font-size: 1rem;
+}
+.base-card-titel{
+font-size: 3rem;
+margin-bottom: 0px;
+}
+.numberSetCard{
+    height: 300px;
+    padding: 0px;
+}
+
+
+.card img{
+    object-fit: contain;
+    height: 200px;
+}
+.cart-text{
+    font-size: small;
+}

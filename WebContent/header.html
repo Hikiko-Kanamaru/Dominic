@@ -1,0 +1,287 @@
+<header>
+<!-- ログイン系 -->
+    <!-- 全体を指定するDIV未使用 -->
+    <div id="">
+      <header>
+        <!-- ヘッダメニュー -->
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" href="mainView.html" id="list">リスト</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mainView.html?mode=use" id="use" >使い方</a>
+            </li>
+            <li class="nav-item">
+                      <button id="login"
+          type="button"
+          class="btn btn-secondary"
+          data-toggle="modal"
+          data-target="#modelIdLogin"
+        >ログイン</button>
+  
+  
+            </li>
+        </ul>
+        <!-- Button trigger modal -->
+  
+  
+  
+  
+        <!-- ログインモーダル -->
+        <div
+          class="modal fade"
+          id="modelIdLogin"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="modelTitleId"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">ログイン</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <div></div>
+                  <div>
+                    <p>
+  <div class="form-group">
+    <label for=""></label>
+    <input type="text"
+      class="form-control" name="" id="loginID" aria-describedby="helpId" placeholder="ログインID">
+    <small id="helpId" class="form-text text-muted" > </small>
+    <input type="password"
+    class="form-control" name="" id="loginPassword" aria-describedby="helpId" placeholder="*******">
+  
+  <small id="helppassword" class="form-text text-muted">ログインID・パスワードを入力してください。 </small>
+  <p id="passMessage"></p>
+  </div>
+  
+                  </p>
+                </div>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="createUser"
+                >新規登録</button>
+  
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  閉じる
+                </button>
+                <button type="button" class="btn btn-primary" id="loginCheck">ログイン</button>
+              </div>
+            </div>
+          </div>
+        </div>
+   <!-- /ログインモーダル -->
+  <!-- ログアウトモーダル -->
+  <div
+  class="modal fade"
+  id="modelIdLogout"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="modelTitleId"
+  aria-hidden="true"
+  >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">ログアウト</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div></div>
+          <div>
+            <p>
+              現在パスワードの再発行には対応しておりません。<br>
+              パスワードまたはログインIDを忘れると再度ログインできなくなります注意してください。<br>
+  
+  
+          </p>
+  
+        </div>
+        <p id="logOutMessage"></p>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-dismiss="modal"
+        >
+          閉じる
+        </button>
+        <button type="button" class="btn btn-primary" id="CheckOut">ログアウト</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- /ログアウトモーダル -->
+  
+  
+  <!-- クリエイトユーザーモーダル -->
+  <div
+  class="modal fade"
+  id="createUserModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="modelTitleId"
+  aria-hidden="true"
+  >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">新規登録</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div></div>
+          <div>
+            <p>
+  <div class="form-group">
+  <label for=""></label>
+  <input type="text"
+  class="form-control" name="" id="createloginID" aria-describedby="helpId" placeholder="ログインID">
+  <small id="createId" class="form-text text-muted" >
+    ログインIDを入力してください。<br>
+    半角英数が利用可能です。<br>
+    6文字以上20文字以下で入力してください。<br>
+    画面上に表示されるので、気を付けて設定してください。
+  </small>
+  <hr>
+  <input type="password"
+  class="form-control-createUser"  name="" id="setloginPassword1" aria-describedby="helpId" placeholder="*******">
+  
+  <input type="password"
+  class="form-control-createUser" name="" id="setloginPassword2" aria-describedby="helpId" placeholder="*******">
+  <small id="createhelpPassword" class="form-text text-muted">同一のパスワードを2回入力してください。<br>
+  半角英数および.-_が利用可能です。<br>
+  安全のために6文字以上20文字以下で入力してください。
+  </small>
+  <hr>
+  <p id="createUserIDModalMessage"></p>
+  <p id="createUserModalMessage"></p>
+  </div>
+  
+          </p>
+        </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-dismiss="modal"
+        >
+          閉じる
+        </button>
+        <button type="button" class="btn btn-primary" id="userCreateCheck">ユーザー登録</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- /クリエイトユーザーモーダル終了 -->
+  
+<!-- ログイン系/ -->
+
+
+
+  <p id="title">
+    <a href="index.html"> Dominic</a>
+  </p>
+  <!-- 検索画面 -->
+  <div>
+    <span
+      ><input type="number" name="number" id="number" placeholder="数値"
+    /></span>
+    <span id="equal">と</span>
+
+    <span>
+      <input type="text" name="name" id="name" placeholder="言葉" />
+    </span>
+    <span id="wo">を</span>
+    <span>
+      <button id="search">つなげる</button>
+    </span>
+  </div>
+
+  <!-- 検索画面 -->
+
+  <button id="login">ゲスト</button>
+  <ul class="menuButton">
+    <li>
+      <button class="menuButton" id="list" value="list.html">リスト</button>
+    </li>
+    <li><button id="word" value="word.html">単語帳</button></li>
+    <li>
+      <button class="menuButton" id="training" value="training.html">
+        練習
+      </button>
+    </li>
+    <li><button id="use" value="use.html">使い方</button></li>
+  </ul>
+</header>
+
+<p id="out"></p>
+<script>
+  // 画面切り替え用の関数
+  function changeWindow(URL) {
+    $("#innerHTML").load(URL);
+    // alert("kore");
+    innerURL = URL;
+  }
+
+  $(document).ready(function () {
+    
+  
+
+    
+    //変数宣言
+    // 同一ページに移動しないようにするためのURL保存場所
+    var innerURL = "";
+
+    // サーチボタン
+    $("#search").click(() => {
+      $("#out").load("headerAnswer.html");
+    });
+
+    // 画面切り替え
+    $(document).on("click", ".menuButton > li > button", function () {
+      var link = $(this).attr("value");
+
+      if (link != innerURL) {
+        changeWindow(link);
+        innerURL = link;
+      }
+    });
+  });
+</script>

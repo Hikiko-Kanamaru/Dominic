@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Use SimpleAPI</h1>
+<h2>これじゃね</h2>
+<h3>テスト</h3>
+<p id="oreo">表示されてる？</p>
+<input type="text" id=name></input>
+<input type="password" id="pass"></input>
+
+<select id="lang_id">
+	<option value="日本人">日本語</option>
+	<option value="アメリカン">English</option>
+	<option value="ハワイアン">Hawaiian</option>
+</select>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){
+	$('#lang_id').change(function(){
+		$.ajax({
+			url: 'http://localhost:8080/DominicAPI/loginApi',
+			type: 'POST',
+			data: {lang_id: $("#name").val(),
+				password:$("#pass").val()
+			}
+		})
+		.done(function(res){
+			console.log(res);
+			$('h1').text(res.userName);
+			$('h2').text(res.loginTest);
+			$('h3').text(res.msg);
+			if(res.loginTest){
+				$('oreo').text('変更できる');
+			}else{
+				alert("これ")
+			}
+		})
+		.fail(function(){
+			$('h1').text('失敗しました');
+		});
+	});
+});
+</script>
+</body>
+</html>

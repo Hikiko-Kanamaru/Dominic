@@ -1,0 +1,15 @@
+/* .menuButton{
+color: red;
+} */
+
+
+.cardWorld{
+   margin-top: 1rem;
+   padding-bottom: 0px;
+}
+
+.card{
+    min-width: 286px;
+    margin:4% 2% 4% 2%;
+    width: 96%;
+}

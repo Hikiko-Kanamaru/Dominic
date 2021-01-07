@@ -1,0 +1,20 @@
+/* .menuButton{
+    color: red;
+    } */
+
+
+
+ .card{
+         min-width: 100px;
+         /* min-height: 100px; */
+         margin:3rem 2rem 3rem 2rem;
+         width:28%;
+         /* height: 35%; */
+         max-width: 480px;
+         /* max-height: 550px; */
+}
+
+
+.card-img-top{
+    max-height: 400px;
+}

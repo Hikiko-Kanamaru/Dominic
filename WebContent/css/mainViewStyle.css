@@ -1,0 +1,200 @@
+
+
+@charset "UTF-8";
+:root {
+  --neBgColor: #7d7d7d;
+  --neShadow: #515151;
+  --neShadowBlur: #a9a9a9;
+}
+
+body {
+  background: var(--neBgColor);
+}
+
+#mainBox{
+  /* margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto; */
+  /* text-align: center; */
+  /* min-height: 200px; */
+  width: 70%;
+  box-sizing: border-box;
+  /* border-radius: 50px; */
+  /* background:  var(--neBgColor); */
+  /* box-shadow: 20px 20px 60px var(--neShadow),
+    -20px -20px 60px var(--neShadowBlur); */
+    /* display: flex; */
+    /* float: left; */
+    padding-top: 10px;
+}
+/* #ansewr { */
+  /* margin: 100px, 0, auto, 0;
+} */
+
+.maininput {
+  display: inline;
+  font-size: 0.8;
+  border: none;
+  height: 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: none;
+  padding: 10px 8px;
+  /*  */
+  border-radius: 50px;
+  /* background: var(--neBgColor); */
+  box-shadow: 5px 5px 10px #5a5a5a, -5px -5px 10px #a0a0a0;
+}
+input.maininput {
+  outline: none;
+}
+
+#answerBoxWord {
+  /* padding-top: 150px; */
+  /* padding-bottom: 30rem; */
+  /* width: 100%; */
+  display: inline;
+  margin: auto;
+  max-width: 70%;
+  min-width: 40%;
+}
+#answerBoxButton {
+  display: inline;
+}
+
+#ansewr {
+  /* margin-bottom: auto; */
+  margin-top: 0.8rem;
+  margin-right: 1rem;
+  min-width: 30rem;
+  max-width: 60%;
+}
+
+.numberSet {
+  margin-left: 1rem;
+  margin: 2rem 2rem 1rem 2rem;
+}
+
+
+
+
+.mainButton {
+  height: 1.4rem;
+  width: 6rem;
+  font-size: 1.00rem;
+  border-style: none;
+  border-radius: 16px;
+  background: linear-gradient(145deg, #717171, #868686);
+  box-shadow: 5px 5px 10px #5a5a5a, -5px -5px 10px #a0a0a0;
+  outline: none;
+  color: rgb(255, 255, 255);
+}
+
+.mainButton:active {
+  /*影をけす*/
+  box-shadow: none;
+  outline: none;
+  background: #7d7d7d;
+  box-shadow: inset 5px 5px 10px #5a5a5a, inset -5px -5px 10px #a0a0a0;
+  color: rgb(158, 158, 158);
+}
+
+Button:focus {
+  outline: none;
+}
+
+/* .columnbody{
+  min-height: 1000px;
+  column-count: 3;
+  break-inside: avoid;
+  column-gap: 2rem;
+} */
+
+
+
+#Boxmsg1 {
+  /* padding: 1rem; */
+  /* text-align: center; */
+ }
+
+
+
+
+
+.menuButton{
+  width: 100%;
+}
+
+/* .justify-content-end { */
+  /* z-index: 3; */
+/* } */
+
+#title {
+  display: flex;
+  width: 8.1rem;
+  height: 4rem;
+  font-size: 2rem;
+  float: left;
+  /* color: white; */
+  padding-top: 1rem;
+ }
+
+
+#navBox{
+  position:fixed;
+  z-index: 3;
+  /* background-color: red; */
+  background-color: var(--neBgColor);
+  width: 100%;
+  top: 0pt;
+  box-shadow: 5px 5px 10px #5a5a5a, -5px -5px 10px #a0a0a0;
+  /* min-width: 1050px; */
+
+}
+
+
+
+
+
+
+.menuButton{
+width: 99%;
+border-style: none;
+border-radius: 3px;
+background: linear-gradient(145deg, #717171, #868686);
+box-shadow: 5px 5px 10px #5a5a5a, -5px -5px 10px #a0a0a0;
+outline: none;
+color: rgb(255, 255, 255);
+}
+
+
+.menuButton:focus {
+  outline: none;
+}
+
+
+.menuButton:active {
+  /*影をけす*/
+  box-shadow: none;
+  outline: none;
+  background: #7d7d7d;
+  box-shadow: inset 5px 5px 10px #5a5a5a, inset -5px -5px 10px #a0a0a0;
+  color: rgb(158, 158, 158);
+}
+
+#answerSpace{
+visibility:hidden
+}
+
+.viewing{
+  background: #585864;
+  /* border-style: solid; */
+}
+
+#answerBoxmgs{
+  display:none
+}
+
+
+.justify-content-end {
+  float: right;
+}

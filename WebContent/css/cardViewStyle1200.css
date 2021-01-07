@@ -1,0 +1,15 @@
+/* .menuButton{
+    color: red;
+    }
+ */
+
+
+ .card{
+         min-width: 100px;
+         /* min-height: 100px; */
+         margin:5% 3% 5% 3%;
+         width:44%;
+         /* height: 35%; */
+         max-width: 480px;
+}
+

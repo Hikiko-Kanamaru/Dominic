@@ -1,0 +1,128 @@
+<head>
+  <link rel="stylesheet" href="css/wordViewStyle.css" />
+  <link rel="stylesheet" href="css/wordViewStyle576.css" media="screen and (max-width: 576px)">
+
+</head>
+
+<!-- /js指定用div -->
+<div class="cardViewjs">
+
+<!-- 画面調整用div -->
+
+<div class="cardWorld clearfix" id="cardWorld">
+<div class="card text-left cardNo-1" data-id=-1>
+  <div class="card-body">
+    <h4 class="card-title CtitleText text-1" id="text-1">記憶文章がここに表示されます</h4>
+
+
+    <div class="subtext" >
+
+      <span class="card-text value-1">数値</span>
+      <span>=</span>
+      <span class="card-text word-1">単語</span>
+  <p class="editButton">
+      <button type="button" class="btn btn-primary edit " value="-1">
+        編集
+      </button>
+  </p>
+    </div>
+</div>
+
+<div class="editCord" id="content--1">
+  <div class="textSet">
+    <h4 class="card-subtitle">
+
+      <!--text入力 -->
+      <input
+        type="text"
+        name="inputtext"
+        id="regText-1"
+        value="text-1"
+        placeholder="記憶文章"
+        class="regText-1 text-1 regText"
+      />
+<!--                inputにこの属性が与えられていた。  name="1name" -->
+<!-- inputname1に変更する -->
+
+    </h4>
+
+    <!-- 数値入力 -->
+<div class="input-group">
+<div class="input-group-prepend">
+<span class="input-group-text" id="valueword-1">紐づける</span>
+</div>
+
+      <input
+        type="number"
+        name="regvalue-1"
+        id="regvalue-1"
+        placeholder="数値"
+        class="regvalue-1 value-1 regvalue form-control"
+        max = 999999 min = 0 setp = 1
+      />
+
+
+
+        <input
+          type="text"
+          name="regword-1"
+          id="regword-1"
+          placeholder="単語"
+          class="regword-1 word-1 regword form-control"
+        />
+
+
+
+</div>
+
+
+      <!-- 単語入力 -->
+
+<p class="text-left regButtonP" style="padding-top: 10px">
+
+      <button type="button" class="btn btn-primary reg text-right regButton" value="-1" style="margin-right: 0.5rem">
+        登録
+      </button>
+      <!-- class firstsetは,デフォルト表示用のもののため、再利用の際には消しておくこと-->
+
+      <button type="button" class="btn btn-danger deleteButton text-right firstset delButton-1" value="-1">
+        削除
+      </button>
+<span class="regBoxmgs" id="regBoxmgs-1" style="padding-left: 2rem;"></span>
+
+
+</p>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<p id="wordbase1"></p>
+<p id="wordbase2"></p>
+<p id="wordbase3"></p>
+
+</div>
+
+
+<!-- /画面調整用div -->
+
+</div>
+<!-- /js指定用div -->
+
+<script src="js/mainWordView.js"></script>

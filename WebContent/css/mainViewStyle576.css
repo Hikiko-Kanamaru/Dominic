@@ -1,0 +1,54 @@
+
+#navBox{
+    position: initial;
+}
+
+#mainNav{
+    float: none;
+}
+#ansewr{
+    width: 60%;
+    min-width: 6rem;
+}
+#mainBox{
+    width:100% ;
+}
+#name{
+    width: 30%;
+}
+#mainBox button{
+margin-top: 0.5rem;
+}
+#mainBox input{
+    margin-top: 0.5rem;
+    min-width: 6rem;
+}
+.afterKaigyou::after{
+    content: "\A";
+    white-space: pre ;
+}
+
+#title{
+    height: 3rem;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    width: 6rem;
+
+}
+
+#answerBoxButton{
+    margin-top: 0.5rem;
+}
+
+.mainButton{
+    font-size: 0.8rem;
+}
+
+#maininputmsg2{
+    font-size: 0.8rem;
+}
+
+
+#maininputmsg{
+    font-size: 0.8rem;
+}

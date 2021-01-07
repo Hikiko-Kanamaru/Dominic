@@ -1,0 +1,23 @@
+
+#answerBoxWord{
+        max-width: 70%;
+    }
+
+#answerBox{
+        width: 96%;
+        min-width: 200px;
+    }
+
+#ansewr{
+margin-bottom: 1rem;
+}
+
+.card{
+    margin-left: 2%;
+    margin-right: 2%;
+    width:96% ;
+    max-width: 100%;
+    min-width: 200px;
+    float: none;
+    margin-top: 3rem;
+}

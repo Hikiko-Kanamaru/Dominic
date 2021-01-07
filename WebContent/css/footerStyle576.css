@@ -1,0 +1,8 @@
+#footer > footer{
+    position: static;
+
+}
+
+#footer > footer > div > p{
+    margin-bottom: 0px;
+}
